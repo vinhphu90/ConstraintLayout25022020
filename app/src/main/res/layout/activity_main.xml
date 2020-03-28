@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
    <androidx.constraintlayout.widget.ConstraintLayout
+       app:layout_constraintHeight_percent="0.2"
        app:layout_constraintBottom_toTopOf="@id/constraintgroup2"
        android:id="@+id/constraintgroup1"
        app:layout_constraintTop_toTopOf="parent"
@@ -15,49 +16,17 @@
        android:layout_width="match_parent"
        android:layout_height="0dp">
        <TextView
-           app:layout_constraintHeight_percent="0.25"
+           android:textColor="#ffffff"
            android:background="#f20"
-           android:textSize="20dp"
+           android:textSize="30dp"
            android:id="@+id/text1"
            android:gravity="center"
-           android:text="A"
+           android:text="1"
            app:layout_constraintLeft_toLeftOf="parent"
            app:layout_constraintTop_toTopOf="parent"
            android:layout_width="match_parent"
-           android:layout_height="0dp"/>
-       <TextView
-           app:layout_constraintHeight_percent="0.25"
-           android:background="#299F2E"
-           app:layout_constraintTop_toBottomOf="@id/text1"
-           android:textSize="20dp"
-           android:id="@+id/text2"
-           android:gravity="center"
-           android:text="B"
-           app:layout_constraintLeft_toLeftOf="parent"
-           android:layout_width="match_parent"
-           android:layout_height="0dp"/>
-       <TextView
-           app:layout_constraintHeight_percent="0.25"
-           android:background="#A6859113"
-           app:layout_constraintTop_toBottomOf="@id/text2"
-           android:textSize="20dp"
-           android:id="@+id/text3"
-           android:gravity="center"
-           android:text="C"
-           app:layout_constraintLeft_toLeftOf="parent"
-           android:layout_width="match_parent"
-           android:layout_height="0dp"/>
-       <TextView
-           app:layout_constraintHeight_percent="0.25"
-           android:background="#CA4D209C"
-           app:layout_constraintTop_toBottomOf="@id/text3"
-           android:textSize="20dp"
-           android:id="@+id/text4"
-           android:gravity="center"
-           android:text="D"
-           app:layout_constraintLeft_toLeftOf="parent"
-           android:layout_width="match_parent"
-           android:layout_height="0dp"/>
+           android:layout_height="match_parent"/>
+
    </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
         app:layout_constraintTop_toBottomOf="@id/constraintgroup1"
@@ -68,49 +37,65 @@
         android:layout_width="match_parent"
         android:layout_height="0dp">
         <TextView
-            app:layout_constraintWidth_percent="0.25"
-            android:background="#FFEB3B"
-            android:textSize="20dp"
-            android:id="@+id/text5"
+            app:layout_constraintWidth_percent="0.26"
+            android:textColor="#ffffff"
+            android:background="#EBD409"
+            android:textSize="30dp"
+            android:id="@+id/text2"
             android:gravity="center"
-            android:text="A"
+            android:text="2"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_width="0dp"
             android:layout_height="match_parent"/>
         <TextView
-            app:layout_constraintWidth_percent="0.25"
-            android:background="#577459"
-            android:textSize="20dp"
-            android:id="@+id/text6"
+            app:layout_constraintBottom_toTopOf="@id/constraintgroup4"
+            app:layout_constraintHeight_percent="0.7"
+            android:text="3"
+            android:textColor="#ffffff"
+            android:background="#EF0C2AD2"
+            android:textSize="30dp"
+            android:id="@+id/text3"
             android:gravity="center"
-            android:text="B"
-            app:layout_constraintLeft_toRightOf="@id/text5"
+            app:layout_constraintLeft_toRightOf="@id/text2"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintgroup4"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text3"
+            app:layout_constraintLeft_toRightOf="@id/text2"
             android:layout_width="0dp"
             android:layout_height="match_parent"/>
         <TextView
-            app:layout_constraintWidth_percent="0.25"
-            android:background="#AC21C4"
-            android:textSize="20dp"
-            android:id="@+id/text7"
-            android:gravity="center"
-            android:text="C"
-            app:layout_constraintLeft_toRightOf="@id/text6"
+            app:layout_constraintTop_toBottomOf="@id/text3"
+            app:layout_constraintWidth_percent="0.37"
             app:layout_constraintBottom_toBottomOf="parent"
+            android:text="4"
+            android:textColor="#ffffff"
+            android:background="#D5D987E7"
+            android:textSize="30dp"
+            android:id="@+id/text4"
+            android:gravity="center"
+            app:layout_constraintLeft_toRightOf="@id/text2"
+            app:layout_constraintRight_toLeftOf="@id/text5"
             android:layout_width="0dp"
-            android:layout_height="match_parent"/>
+            android:layout_height="0dp"/>
         <TextView
-            app:layout_constraintWidth_percent="0.25"
-            android:background="#9D1B6D"
-            android:textSize="20dp"
-            android:id="@+id/text8"
-            android:gravity="center"
-            android:text="D"
-            app:layout_constraintLeft_toRightOf="@id/text7"
+            app:layout_constraintTop_toBottomOf="@id/text3"
+            app:layout_constraintWidth_percent="0.37"
             app:layout_constraintBottom_toBottomOf="parent"
+            android:text="5"
+            android:textColor="#ffffff"
+            android:background="#9525A9"
+            android:textSize="30dp"
+            android:id="@+id/text5"
+            android:gravity="center"
+            app:layout_constraintLeft_toRightOf="@id/text4"
+            app:layout_constraintRight_toRightOf="parent"
             android:layout_width="0dp"
-            android:layout_height="match_parent"/>
-
+            android:layout_height="0dp"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
